@@ -1,0 +1,11 @@
+/* pages/common/login.wxss */
+.btn_login{
+  margin: 40rpx 0;
+}
+.role_box{
+  text-align: center;
+  margin: 40rpx 0;
+}
+.radio{
+  margin-right: 30rpx;
+}

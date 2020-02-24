@@ -1,0 +1,5 @@
+<!--pages/components/ygHuiyuan/index/index.wxml-->
+<view>
+  <view>会员端首页</view>
+  <view bindtap="openKcDetail" data-kcid="kcid001" data-levels="hy_home,hy_kcDetail" data-name="hy_kcDetail" style="margin:100rpx 100rpx;padding:20rpx;background:#eb6100;font-size:24rpx;">查看课程详情(传值到父视图)</view>
+</view>

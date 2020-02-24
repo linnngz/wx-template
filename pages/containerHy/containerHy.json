@@ -1,0 +1,14 @@
+{
+  "component": true,
+  "usingComponents": {
+    "navBar": "../components/navigation/navigation",
+    "tabBar": "../components/tabBar/tabBar",
+    "hyIndex": "../components/ygHuiyuan/index/index",
+    "hyChangguan": "../components/ygHuiyuan/changguan/changguan",
+    "hyMsg": "../components/ygHuiyuan/msg/msg",
+    "hyMine": "../components/ygHuiyuan/mine/mine",
+    "hyKcDetail": "../components/ygHuiyuan/kcDetail/kcDetail",
+    "hyCoachDetail": "../components/ygHuiyuan/coachDetail/coachDetail"
+  },
+  "navigationBarTitleText": "妙谛瑜伽"
+}

@@ -1,0 +1,15 @@
+<!--pages/common/login.wxml-->
+<view class="login">
+<!-- 自定义 navigation -->
+  <navBar showBack="{{componentParams.navback}}" componentLevels="{{componentParams.levels}}" bind:goBack="getComponentParams" title="妙谛瑜伽"></navBar>
+  
+  <button type="primary" class="btn_login" size="default" loading="{{loading}}" plain="{{plain}}" bindtap="login"> Login </button>
+  <view class="role_box">
+    <radio-group class="radio-group" bindchange="radioChange">
+      <radio class="radio" wx:for-items="{{roles}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+        <text>{{item.value}}</text>
+      </radio>
+    </radio-group>
+  </view>
+  
+</view>

@@ -1,0 +1,36 @@
+<!--pages/components/navigation/navigation.wxml-->
+<view class="cu-custom {{topClass}}" style="height:{{cBarHeight}}px">
+  <view class="cu-bar fixed {{titleClass}}" style="height:{{cBarTitleHeight}}px;padding-top:{{cBarTitlePaddingTop}}px;{{background}}{{!showShadow?'box-shadow:unset;':''}}transition: background 1s;z-index:998">
+
+    <!-- 自定义 navigation -->
+    <view wx:if="{{showBack}}" bindtap="goBack" class="action" style="{{isiPad?'font-size:20rpx;':''}}">
+      <text class="cu-icon-font icon-back text">{{showBackText}}</text>
+    </view>
+
+    <!-- 后退和主页按钮都显示 -->
+    <!-- <view wx:if="{{showBack && showHome}}" class="action border-custom" style="width:{{custom.width}}px;height:{{custom.height}}px;margin-left:calc(750rpx - {{custom.right}}px)">
+      <navigator class="citem" open-type="{{navBackType}}" delta="1" hover-class="none" style="width:{{custom.width}}px;height:{{custom.height}}px;">
+      	<text class="cu-icon-font icon-back text" style="height:{{custom.height}}px;{{isiPad?"font-size:20rpx;":""}}"></text>
+      </navigator>
+      <navigator class="citem" open-type="{{hOpenType}}" hover-class="none" url="{{hPath}}" style="width:{{custom.width}}px;height:{{custom.height}}px;">
+      	<text class="cu-icon-font icon-homefill text" style="height:{{custom.height}}px;{{isiPad?"font-size:20rpx;":""}}"></text>
+      </navigator>
+    </view> -->
+
+    <!-- 只显示后退按钮 -->
+  	<!-- <navigator wx:elif="{{showBack}}" class="action" open-type="navigateBack" delta="1" hover-class="none" style="{{isiPad?"font-size:20rpx;":""}}">
+  		<text class="cu-icon-font icon-back text"></text> {{showBackText}}
+    </navigator> -->
+
+    <!-- 只显示主页按钮 -->
+    <!-- <navigator wx:elif="{{showHome}}" class="action" open-type="{{hOpenType}}" url="{{hPath}}" hover-class="none">
+      <text class="cu-icon-font icon-homefill text home-only"></text>
+    </navigator> -->
+
+    <!-- loading状态 -->
+    <view class="content {{titleTextClass}} {{loading?'nva-loading':''}}" style="top:{{cBarTitleTop}}px;{{isiPad?'font-size:24rpx;':''}}">
+      <text wx:if="{{loading}}" class="iconfont2 icon-loading"></text>
+      <text>{{title}}</text>
+    </view>
+  </view>
+</view>

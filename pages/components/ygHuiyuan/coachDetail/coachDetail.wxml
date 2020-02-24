@@ -1,0 +1,5 @@
+<!--pages/components/ygHuiyuan/coachDetail/coachDetail.wxml-->
+<view>
+  <view>教练详情页</view>
+  <view>从课程详情页带过来的参数-教练id: {{coachid}}</view>
+</view>

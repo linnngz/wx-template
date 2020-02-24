@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/common/login/login",
+    "pages/containerHy/containerHy",
+    "pages/components/ygHuiyuan/index/index",
+    "pages/components/ygHuiyuan/msg/msg",
+    "pages/components/ygHuiyuan/changguan/changguan",
+    "pages/components/ygHuiyuan/mine/mine",
+    "pages/containerJl/containerJl",
+    "pages/components/ygCoach/gym/gym",
+    "pages/components/ygCoach/msg/msg",
+    "pages/components/ygCoach/mine/mine",
+    "pages/containerXs/containerXs",
+    "pages/components/ygSale/gym/gym",
+    "pages/components/ygSale/msg/msg",
+    "pages/components/ygSale/mine/mine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/containerHy/containerHy",
+        "text": "会员端"
+      },
+      {
+        "pagePath": "pages/containerJl/containerJl",
+        "text": "教练端"
+      },
+      {
+        "pagePath": "pages/containerXs/containerXs",
+        "text": "销售端"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

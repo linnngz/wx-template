@@ -1,0 +1,21 @@
+<!--pages/containerJl/containerJl.wxml-->
+<view class="container">
+  <!-- 自定义 navigation -->
+  <navBar showBack="{{componentParams.navback}}" componentLevels="{{componentParams.levels}}" bind:goBack="getComponentParams" title="妙谛瑜伽"></navBar>
+
+  <view class="page">
+    <!-- <view>当前登录角色：{{role}}</view> -->
+    <!-- 健身房 -->
+    <jlGym class="cust_comp {{activeComponentName==='jl_gym'?'active':''}}"></jlGym>
+
+    <!-- 消息 -->
+    <jlMsg class="cust_comp {{activeComponentName==='jl_msg'?'active':''}}"></jlMsg>
+
+    <!-- 个人中心 -->
+    <jlMine class="cust_comp {{activeComponentName==='jl_mine'?'active':''}}"></jlMine>
+  </view>
+
+  <!-- 自定义 tabbar" -->
+  <tabBar role="{{role}}" bind:tabTap="getActiveComponentName"></tabBar>
+</view>
+

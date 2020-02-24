@@ -1,0 +1,82 @@
+<!--pages/components/tabBar.wxml-->
+<!-- 会员端 -->
+<view wx:if="{{role==='member' && show}}" class="tabBar clear">
+  <view class="bar_item fl {{activeName==='hy_home'?'active':''}}" bindtap="tabTap" data-name="hy_home">
+    <view class="item_ico">
+      <image wx:if="{{activeName==='hy_home'}}" src="../../../imgs/ygHuiyuan/icon_recommend_active.png"></image>
+      <image wx:else src="../../../imgs/ygHuiyuan/icon_recommend.png"></image>
+    </view>
+    <view class="item_name">推荐</view>
+  </view>
+  <view class="bar_item fl {{activeName==='hy_changguan'?'active':''}}" bindtap="tabTap" data-name="hy_changguan">
+    <view class="item_ico">
+      <image wx:if="{{activeName==='hy_changguan'}}" src="../../../imgs/ygHuiyuan/icon_house_active.png"></image>
+      <image wx:else src="../../../imgs/ygHuiyuan/icon_house.png"></image>
+    </view>
+    <view class="item_name">场馆</view>
+  </view>
+  <view class="bar_item fl {{activeName==='hy_msg'?'active':''}}" bindtap="tabTap" data-name="hy_msg">
+    <view class="item_ico">
+      <image wx:if="{{activeName==='hy_msg'}}" src="../../../imgs/ygHuiyuan/icon_message_active.png"></image>
+      <image wx:else src="../../../imgs/ygHuiyuan/icon_message.png"></image>
+    </view>
+    <view class="item_name">消息</view>
+  </view>
+  <view class="bar_item fl {{activeName==='hy_mine'?'active':''}}" bindtap="tabTap" data-name="hy_mine">
+    <view class="item_ico">
+      <image wx:if="{{activeName==='hy_mine'}}" src="../../../imgs/ygHuiyuan/icon_mine_active.png"></image>
+      <image wx:else src="../../../imgs/ygHuiyuan/icon_mine.png"></image>
+    </view>
+    <view class="item_name">我的</view>
+  </view>
+</view>
+
+<!-- 教练端 -->
+<view wx:elif="{{role==='coach' && show}}" class="tabBar clear">
+  <view class="bar_item fl {{activeName==='jl_gym'?'active':''}}" bindtap="tabTap" data-name="jl_gym">
+    <view class="item_ico">
+      <image wx:if="{{activeName==='jl_gym'}}" src="../../../imgs/ygCoach/icon_gym_active.png"></image>
+      <image wx:else src="../../../imgs/ygCoach/icon_gym.png"></image>
+    </view>
+    <view class="item_name">健身房</view>
+  </view>
+  <view class="bar_item fl {{activeName==='jl_msg'?'active':''}}" bindtap="tabTap" data-name="jl_msg">
+    <view class="item_ico">
+      <image wx:if="{{activeName==='jl_msg'}}" src="../../../imgs/ygCoach/icon_msg_active.png"></image>
+      <image wx:else src="../../../imgs/ygCoach/icon_msg.png"></image>
+    </view>
+    <view class="item_name">消息</view>
+  </view>
+  <view class="bar_item fl {{activeName==='jl_mine'?'active':''}}" bindtap="tabTap" data-name="jl_mine">
+    <view class="item_ico">
+      <image wx:if="{{activeName==='jl_mine'}}" src="../../../imgs/ygCoach/icon_mine_active.png"></image>
+      <image wx:else src="../../../imgs/ygCoach/icon_mine.png"></image>
+    </view>
+    <view class="item_name">我的</view>
+  </view>
+</view>
+
+<!-- 销售端 -->
+<view wx:elif="{{role==='sale' && show}}" class="tabBar clear">
+  <view class="bar_item fl {{activeName==='xs_gym'?'active':''}}" bindtap="tabTap" data-name="xs_gym">
+    <view class="item_ico">
+      <image wx:if="{{activeName==='xs_gym'}}" src="../../../imgs/ygSale/icon_gym_active.png"></image>
+      <image wx:else src="../../../imgs/ygSale/icon_gym.png"></image>
+    </view>
+    <view class="item_name">健身房</view>
+  </view>
+  <view class="bar_item fl {{activeName==='xs_msg'?'active':''}}" bindtap="tabTap" data-name="xs_msg">
+    <view class="item_ico">
+      <image wx:if="{{activeName==='xs_msg'}}" src="../../../imgs/ygSale/icon_msg_active.png"></image>
+      <image wx:else src="../../../imgs/ygSale/icon_msg.png"></image>
+    </view>
+    <view class="item_name">消息</view>
+  </view>
+  <view class="bar_item fl {{activeName==='xs_mine'?'active':''}}" bindtap="tabTap" data-name="xs_mine">
+    <view class="item_ico">
+      <image wx:if="{{activeName==='xs_mine'}}" src="../../../imgs/ygSale/icon_mine_active.png"></image>
+      <image wx:else src="../../../imgs/ygSale/icon_mine.png"></image>
+    </view>
+    <view class="item_name">我的</view>
+  </view>
+</view>

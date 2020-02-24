@@ -1,0 +1,44 @@
+/* pages/components/tabBar.wxss */
+.tabBar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* padding: 10rpx 0; */
+  background-color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  border-top: #ddd 2rpx solid;
+  padding-top: 8rpx;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clear{
+  overflow: auto;
+  _height: 1%;
+}
+
+.bar_item{
+  width: 25%;
+  text-align: center;
+}
+.item_ico{
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+}
+.item_ico>image{
+  width: 100%;
+  height: 100%;
+}
+.item_name{
+  font-size: 28rpx;
+}
+.bar_item.active>.item_name{
+  color: #F0656F;
+}
