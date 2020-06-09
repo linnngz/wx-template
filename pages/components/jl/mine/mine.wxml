@@ -1,0 +1,21 @@
+<!--pages/components/hy/mine/mine.wxml-->
+<view>教练端-我的</view>
+
+<view style="margin: 50rpx 0;">
+  <view wx:if="{{userWxInfo.nickName}}">
+    <image src="{{userWxInfo.avatarUrl}}" style="width:100rpx;height:100rpx;border-radius:50%;"></image>
+    <view>用户名：{{userWxInfo.nickName}}</view>
+    <view>性别：{{userWxInfo.gender}}</view>
+    <view>语言：{{userWxInfo.language}}</view>
+    <view>国家：{{userWxInfo.country}}</view>
+    <view>省：{{userWxInfo.province}}</view>
+    <view>市：{{userWxInfo.city}}</view>
+
+    <view class="custBtn" bindtap="toLogout" data-levels="hyMine" style="margin: 50rpx 0;">退出登录</view>
+  </view>
+  
+  <view wx:else>
+    <text class="custBtn" bindtap="toLogin" data-levels="hyMine">去登录</text>
+  </view>
+  
+</view>

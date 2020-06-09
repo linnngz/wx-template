@@ -1,6 +1,9 @@
 /* pages/common/login.wxss */
 .btn_login{
   margin: 40rpx 0;
+  background-color: #07c160;
+  color: #fff;
+  font-weight: normal;
 }
 .role_box{
   text-align: center;

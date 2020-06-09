@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "tabBar": "../components/tabbar/tabbar",
+    "xsGym": "../../components/xs/gym/gym",
+    "xsMsg": "../../components/xs/msg/msg",
+    "xsMine": "../../components/xs/mine/mine"
+  }
+}

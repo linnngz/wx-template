@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "navBar": "../components/navigation/navigation"
+    "custNav": "../navigation/navigation"
   }
 }

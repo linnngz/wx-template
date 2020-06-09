@@ -1,12 +1,12 @@
 <!--pages/common/login.wxml-->
 <view class="login">
-<!-- 自定义 navigation -->
-  <navBar showBack="{{componentParams.navback}}" componentLevels="{{componentParams.levels}}" bind:goBack="getComponentParams" title="妙谛瑜伽"></navBar>
+<!-- 自定义 navigation  bind:goBack compLevels="hyMine" -->
+  <custNav showBack="true" backtype="page" title="妙谛瑜伽"></custNav>
   
-  <button type="primary" class="btn_login" size="default" loading="{{loading}}" plain="{{plain}}" bindtap="login"> Login </button>
+  <button open-type="getUserInfo" class="btn_login" lang="zh_CN" bindgetuserinfo="bindGetUserInfo"> Login </button>
   <view class="role_box">
-    <radio-group class="radio-group" bindchange="radioChange">
-      <radio class="radio" wx:for-items="{{roles}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+    <radio-group class="radio-group" bindchange="roleChange">
+      <radio class="radio" wx:for-items="{{roles}}" wx:key="name" value="{{item.type}}" checked="{{item.checked}}">
         <text>{{item.value}}</text>
       </radio>
     </radio-group>

@@ -1,0 +1,4 @@
+<!--pages/components/hy/kcdetail/kcdetail.wxml-->
+<text>会员-课程详情页</text>
+<view style="margin-top:50rpx;">教练</view>
+<text class="custBtn" bindtap="toJlDetail" data-jlid="jlid001" data-levels="hyIndex,kcDetail,jlDetail" type="primary" size="mini">查看教练详情</text>

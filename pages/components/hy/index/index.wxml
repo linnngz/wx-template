@@ -1,0 +1,17 @@
+<!--pages/components/hy/index/index.wxml-->
+<view>
+  <view style="margin-bottom:40rpx;">会员端首页</view>
+  <text bindtap="changeTab" class="custBtn" data-toTabIdx="1" type="primary" size="mini">跳转到指定tab页</text>
+  <view>注：在点击元素上增加自定义数据data-toTabIdx来指定跳转到哪个tab。</view>
+
+  <!-- 课程列表 -->
+  <view style="margin-top:40rpx;">
+    <view>课程列表：</view>
+    <view wx:for="{{num}}" wx:key="index" style="border-bottom:#999 2rpx solid;margin-bottom: 30rpx;">
+      <text style="margin-right:100rpx;">课程 {{index}}</text>
+      <text class="custBtn" bindtap="toKcDetail" data-kcid="kcid{{index}}" data-levels="hyIndex,kcDetail" type="primary" size="mini">查看详情</text>
+    </view>
+  </view>
+
+
+</view>

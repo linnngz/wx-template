@@ -1,0 +1,16 @@
+<!--pages/container/jl/jl.wxml-->
+<view class="container" >
+  <!-- 头部导航 -->
+  <custNav showBack="{{pageParams.navback}}" compLevels="{{pageParams.levels}}" bind:goBack="setCompData" title="妙谛瑜伽"></custNav>
+
+  <!-- 页面内容 -->
+  <view class="page">
+    <jlGym wx:if="{{activeComp==='jlGym'}}" class="comp" bind:changeTab="setTab"></jlGym>
+    <jlMsg wx:if="{{activeComp==='jlMsg'}}" class="comp"></jlMsg>
+    <jlMine wx:if="{{activeComp==='jlMine'}}" userWxInfo="{{userWxInfo}}" bind:sendCompData="setCompData" class="comp"></jlMine>
+  </view>
+  
+  <!-- 自定义 tabbar" -->
+  <tabBar show="{{pageParams.showtab}}" activeIdx="{{activeTabIdx}}" bind:changeTab="setTab"></tabBar>
+
+</view>

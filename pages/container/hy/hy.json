@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "custNav": "../../common/navigation/navigation",
+    "hyIndex": "../../components/hy/index/index",
+    "hyRec": "../../components/hy/rec/rec",
+    "hyMsg": "../../components/hy/msg/msg",
+    "hyMine": "../../components/hy/mine/mine",
+    "kcDetail": "../../components/hy/kcdetail/kcdetail",
+    "jlDetail": "../../components/hy/jldetail/jldetail",
+    "tabBar": "../components/tabbar/tabbar"
+  }
+}

@@ -1,6 +1,0 @@
-<!--pages/components/ygHuiyuan/kcDetail/kcDetail.wxml-->
-<view>
-  <view>课程详情页</view>
-  <view>其他页面传过来的参数-课程id：{{kcid}}</view>
-  <view bindtap="openCoachDetail" data-coachid="coachid001" data-levels="hy_home,hy_kcDetail,hy_coachDetail" style="padding:20rpx;background:#eb6100;color:#fff;font-size:26rpx;margin: 50rpx;">教练-孙悟空(点击查看教练详情)</view>
-</view>

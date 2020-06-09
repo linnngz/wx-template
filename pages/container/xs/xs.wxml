@@ -1,0 +1,14 @@
+<!--pages/container/xs/xs.wxml-->
+<view class="container" >
+
+  <!-- 页面内容 -->
+  <view class="page">
+    <xsGym wx:if="{{activeComp==='xsGym'}}" class="comp" bind:changeTab="getCustTabData"></xsGym>
+    <xsMsg wx:if="{{activeComp==='xsMsg'}}" class="comp"></xsMsg>
+    <xsMine wx:if="{{activeComp==='xsMine'}}" class="comp"></xsMine>
+  </view>
+  
+  <!-- 自定义 tabbar" -->
+  <tabBar bind:changeTab="getCustTabData" show="{{showTab}}" activeIdx="{{activeTabIdx}}"></tabBar>
+
+</view>

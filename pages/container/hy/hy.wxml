@@ -1,0 +1,21 @@
+<!--pages/container/hy/hy.wxml  bind:sendPageData="getPageData" -->
+
+<view class="container" >
+  <!-- 头部导航 -->
+  <custNav showBack="{{pageParams.navback}}" compLevels="{{pageParams.levels}}" bind:goBack="setCompData" title="妙谛瑜伽"></custNav>
+
+  <!-- 页面内容 -->
+  <view class="page">
+    <!-- <hyIndex wx:if="{{activeComp==='hyIndex'}}" class="comp" bind:changeTab="setTab"></hyIndex> -->
+    <hyIndex wx:if="{{activeComp==='hyIndex'}}" class="comp" bind:sendCompData="setCompData" bind:changeTab="setTab"></hyIndex>
+    <hyRec wx:if="{{activeComp==='hyRec'}}" class="comp"></hyRec>
+    <hyMsg wx:if="{{activeComp==='hyMsg'}}" class="comp"></hyMsg>
+    <hyMine wx:if="{{activeComp==='hyMine'}}" userWxInfo="{{userWxInfo}}" bind:sendCompData="setCompData" class="comp"></hyMine>
+    <kcDetail wx:if="{{activeComp==='kcDetail'}}" class="comp" bind:sendCompData="setCompData"></kcDetail>
+    <jlDetail wx:if="{{activeComp==='jlDetail'}}" class="comp"></jlDetail>
+  </view>
+  
+  <!-- 自定义 tabbar" -->
+  <tabBar show="{{pageParams.showtab}}" activeIdx="{{activeTabIdx}}" bind:changeTab="setTab"></tabBar>
+
+</view>

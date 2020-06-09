@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "custNav": "../../common/navigation/navigation",
+    "jlGym": "../../components/jl/gym/gym",
+    "jlMsg": "../../components/jl/msg/msg",
+    "jlMine": "../../components/jl/mine/mine",
+    "tabBar": "../components/tabbar/tabbar"
+  }
+}

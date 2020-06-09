@@ -1,0 +1,23 @@
+/* pages/container/hy/hy.wxss */
+
+.comp{
+  position: relative;
+  top: 0;
+  left: 100vw;
+  width: 100vw;
+  animation: pageInRight 600ms ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pageInRight {
+  from {
+    left: 100vw;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.page{
+  padding: 0 30rpx;
+}

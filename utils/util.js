@@ -1,24 +1,19 @@
-// 获取登录角色
-const getRole = (cb) => {
-  // let _this = this
+const formatTime = date => {
+  const year = date.getFullYear()
+  const month = date.getMonth() + 1
+  const day = date.getDate()
+  const hour = date.getHours()
+  const minute = date.getMinutes()
+  const second = date.getSeconds()
 
-  wx.getStorage({
-    key: 'userInfo',
-    success: function (res) {
-      if (res.errMsg === 'getStorage:ok') {
-        let resData = JSON.parse(res.data)
-        // _this.setData({ role: resData.role })
-        console.log('登录角色：' + resData.role)
-        cb(resData.role)
-      } else {
-        console.log('获取登录角色出错')
-      }
-    },
-    fail: function () { console.log('获取登录角色失败') }
-  })
+  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
 }
 
+const formatNumber = n => {
+  n = n.toString()
+  return n[1] ? n : '0' + n
+}
 
 module.exports = {
-  getRole: getRole
+  formatTime: formatTime
 }

@@ -9,15 +9,24 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false,
 		"coverView": true,
+		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useCompilerModule": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.10.1",
-	"appid": "wxa355dc50ca3d8458",
-	"projectname": "yoga",
+	"libVersion": "2.11.0",
+	"appid": "wx04a25ba430d309c2",
+	"projectname": "wx-template",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
