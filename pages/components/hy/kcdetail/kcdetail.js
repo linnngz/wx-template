@@ -20,7 +20,7 @@ Component({
   methods: {
     // 打开教练详情页
     toJlDetail (e) {
-      console.log(e)
+      // console.log(e)
       let compData = {
         levels: e.currentTarget.dataset.levels, // 当前激活的组件名称
         name: 'jlDetail',                       // 将要打开的页面(组件)的名称

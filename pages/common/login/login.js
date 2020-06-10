@@ -9,7 +9,7 @@ Page({
 
   onLoad (options) {
     this.setRoleData()
-    console.log(options)
+    // console.log(options)
   },
 
   // 后退
@@ -38,7 +38,7 @@ Page({
   // 获取组件数据并设置active的组件
   setCompData(e) {
     let _this = this
-    console.log(e)
+    // console.log(e)
     let pagedata = e.detail
     _this.setData({pageParams: pagedata })
   },
@@ -46,7 +46,7 @@ Page({
   // 获取微信授权
   bindGetUserInfo: function (e) {
     let _this = this
-    console.log(e)
+    // console.log(e)
     if (e.detail.userInfo) { // 允许授权
       wx.showToast({title: '授权成功', icon: 'none', duration: 2000})
       wx.setStorage({key: 'userWxInfo', data: e.detail.userInfo})

@@ -19,14 +19,14 @@ Page({
   // 获取组件数据并设置active的组件
   setCompData(e) {
     let _this = this
-    console.log(e)
+    // console.log(e)
     let pagedata = e.detail
     _this.setData({ activeComp: pagedata.name, pageParams: pagedata })
   },
 
   // 获取tabbar数据并设置active的tab
   setTab(e) {
-    console.log(e)
+    // console.log(e)
     let _this = this
     let activeTabIdx = e ? e.detail.activeTabIdx : 0
     _this.setData({ activeTabIdx: activeTabIdx })
@@ -45,7 +45,7 @@ Page({
     wx.getStorage({
       key: 'userWxInfo',
       success: function (res) {
-        console.log(res)
+        // console.log(res)
         _this.setData({ userWxInfo: res.data })
       }
     })

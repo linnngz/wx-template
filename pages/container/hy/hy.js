@@ -5,7 +5,7 @@ Page({
     activeTabIdx: 0,             // 容器中 tabBar 的 active 项的索引值
     pageParams: {showtab: true}, // 子组件向父页面即容器中传递的数据，该参数中的 showtab 属性要显式设置，且默认值为true
     userWxInfo: {}
-    
+
   },
 
   onLoad: function (options) {
@@ -20,7 +20,7 @@ Page({
   // 获取组件数据并设置active的组件
   setCompData (e) {
     let _this = this
-    console.log(e)
+    // console.log(e)
     let pagedata = e.detail
     _this.setData({ activeComp: pagedata.name, pageParams: pagedata })
   },
@@ -32,7 +32,7 @@ Page({
     let activeTabIdx = e ? e.detail.activeTabIdx : 0
     _this.setData({ activeTabIdx: activeTabIdx })
     let tabdata = app.getRoleTabData(app.globalData.loggedRole, app.globalData.roleData)
-    
+
     tabdata.forEach((item, idx) => {
       if (idx === activeTabIdx) {
         _this.setData({ activeComp: item.compName})
@@ -46,7 +46,7 @@ Page({
     wx.getStorage({
       key: 'userWxInfo',
       success: function(res) {
-        console.log(res)
+        // console.log(res)
         _this.setData({userWxInfo: res.data})
       },
     })

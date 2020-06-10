@@ -31,7 +31,7 @@ Component({
     },
     // 页面内切换tab
     changeTab (e) {
-      console.log(e)
+      // console.log(e)
       let compData = {
         activeTabIdx: Number(e.currentTarget.dataset.totabidx),
         // levels: e.currentTarget.dataset.levels, // 组件层级名称（String 类型）
