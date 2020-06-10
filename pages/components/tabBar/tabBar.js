@@ -19,7 +19,7 @@ Component({
 
   // 自执行函数触发：第二种方式通过组件的生命周期函数执行代码
   attached() {
-    console.log(app.globalData)
+    // console.log(app.globalData)
     this.setRole()
     this.setTabList()
   },
@@ -29,11 +29,11 @@ Component({
     setRole () {
       this.setData({ role: app.globalData.loggedRole })
     },
-    
+
     // 设置角色的tabbar的数据
     setTabList () {
       let _this = this
-      
+
       app.globalData.roleData.forEach((item) => {
         if (_this.data.role === item.type) {
           _this.setData({ tablist: item.tablist})
